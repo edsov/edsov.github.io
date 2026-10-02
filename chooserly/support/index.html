@@ -68,7 +68,7 @@
   details[open] summary::after { content: "–"; }
   details p { margin: 0 0 18px; color: var(--muted); }
   a { color: var(--accent); }
-  footer { margin-top: 56px; color: var(--muted); font-size: 14px; }
+  footer { margin-top: 56px; color: var(--muted); font-size: 14px; display: flex; flex-wrap: wrap; gap: 8px 20px; }
   [lang="es"].copy { display: none; }
   body.es [lang="en"].copy { display: none; }
   body.es [lang="es"].copy { display: block; }
@@ -178,7 +178,10 @@
     </details>
   </section>
 
-  <footer>© 2026 Edgar Solis</footer>
+  <footer>
+    <span>© 2026 Edgar Solis</span>
+    <a href="../privacy/">Privacy Policy · Política de privacidad</a>
+  </footer>
 </main>
 <script>
   (function () {
