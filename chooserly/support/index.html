@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chooserly Support</title>
+<meta name="description" content="Help and contact for Chooserly, the finger chooser and name wheel for iPhone and iPad.">
+<style>
+  :root {
+    color-scheme: dark;
+    --canvas: #0A0A0D;
+    --surface: #18181D;
+    --hairline: rgba(255,255,255,0.14);
+    --text: #F5F5FA;
+    --muted: #A3A3B3;
+    --accent: #5AAEF7;
+    --font: ui-rounded, "SF Pro Rounded", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--canvas);
+    color: var(--text);
+    font-family: var(--font);
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px 80px; }
+  header { display: flex; align-items: center; gap: 16px; }
+  .ring {
+    width: 56px; height: 56px; flex: none;
+    border-radius: 50%; border: 7px solid var(--text);
+  }
+  h1 { margin: 0; font-size: 34px; line-height: 1.1; font-weight: 800; letter-spacing: -0.01em; }
+  .lede { color: var(--muted); font-weight: 600; margin: 20px 0 0; text-wrap: pretty; }
+  .lang { display: flex; gap: 8px; margin-top: 28px; }
+  .lang button {
+    font: inherit; font-size: 15px; font-weight: 700;
+    min-height: 44px; padding: 0 18px; border-radius: 22px;
+    background: transparent; color: var(--muted);
+    border: 1px solid var(--hairline); cursor: pointer;
+  }
+  .lang button[aria-pressed="true"] { background: var(--text); color: var(--canvas); border-color: var(--text); }
+  .contact {
+    margin-top: 32px; padding: 24px; border-radius: 20px;
+    background: var(--surface); border: 1px solid var(--hairline);
+  }
+  .contact h2 { margin: 0 0 6px; font-size: 20px; }
+  .contact p { margin: 0 0 18px; color: var(--muted); }
+  .mail {
+    display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px;
+    border-radius: 12px; background: #3399F5; color: #fff;
+    font-weight: 700; text-decoration: none; word-break: break-all;
+  }
+  .mail:hover { background: #2585DC; }
+  h2.section { margin: 48px 0 8px; font-size: 22px; }
+  details { border-bottom: 1px solid var(--hairline); }
+  summary {
+    cursor: pointer; list-style: none; padding: 16px 32px 16px 0; position: relative;
+    font-weight: 700; min-height: 44px;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+"; position: absolute; right: 4px; top: 13px;
+    color: var(--muted); font-size: 22px; font-weight: 600;
+  }
+  details[open] summary::after { content: "–"; }
+  details p { margin: 0 0 18px; color: var(--muted); }
+  a { color: var(--accent); }
+  footer { margin-top: 56px; color: var(--muted); font-size: 14px; }
+  [lang="es"].copy { display: none; }
+  body.es [lang="en"].copy { display: none; }
+  body.es [lang="es"].copy { display: block; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="ring" aria-hidden="true"></div>
+    <h1>Chooserly</h1>
+  </header>
+
+  <nav class="lang" aria-label="Language / Idioma">
+    <button type="button" data-lang="en" aria-pressed="true">English</button>
+    <button type="button" data-lang="es" aria-pressed="false">Español</button>
+  </nav>
+
+  <!-- English -->
+  <section class="copy" lang="en">
+    <p class="lede">Chooserly lets chance decide. Everyone puts a finger on the screen and it picks, or spin a wheel of names. Here's help with the app and how to reach me.</p>
+
+    <div class="contact">
+      <h2>Contact support</h2>
+      <p>Found a bug, have a question or an idea? Write to me and I'll get back to you. Please include your iPhone or iPad model and iOS version.</p>
+      <a class="mail" href="mailto:edgarx75@gmail.com?subject=Chooserly%20support">edgarx75@gmail.com</a>
+    </div>
+
+    <h2 class="section">Frequently asked questions</h2>
+
+    <details>
+      <summary>How do I start a draw?</summary>
+      <p>Open the Touch tab and have everyone put one finger on the screen. Once everyone is in, the rings beat three times and the draw happens. Lift your fingers to start again.</p>
+    </details>
+    <details>
+      <summary>Can it pick more than one person, or make teams?</summary>
+      <p>Yes. Tap the settings icon in the top corner of the Touch screen and choose a mode: one person, several, teams, or a turn order. You can also rank winners 1st, 2nd and 3rd, and change how long the countdown runs.</p>
+    </details>
+    <details>
+      <summary>We're a big group and can't all touch the screen at once.</summary>
+      <p>In the same settings, switch Joining to Tap. Everyone taps the screen once and their marker stays, so you can pass the phone around. Tap a marker again to remove it. Start the draw when everyone is in.</p>
+    </details>
+    <details>
+      <summary>How do I use the wheel and save a list?</summary>
+      <p>Open the Wheel tab, tap the edit button and add at least two names. Give the list a name and save it. Your saved lists are under the lists button, ready to spin again.</p>
+    </details>
+    <details>
+      <summary>Is it really random?</summary>
+      <p>Yes. Every ring looks the same until the draw ends, so nothing hints at the result. The app's draws are tested over tens of thousands of rounds to check that nobody is favoured, both in who wins and in which place they take.</p>
+    </details>
+    <details>
+      <summary>How do I change the theme or turn off vibration and sound?</summary>
+      <p>Open the Settings tab. There you can pick one of six themes and turn vibration and sound on or off.</p>
+    </details>
+    <details>
+      <summary>What happens to my data?</summary>
+      <p>Nothing leaves your device. Chooserly makes no network connections, and your saved name lists are stored only on your iPhone or iPad. Deleting the app deletes them.</p>
+    </details>
+    <details>
+      <summary>Which devices are supported?</summary>
+      <p>iPhone and iPad running iOS or iPadOS 18 or later. The app is available in English and Spanish.</p>
+    </details>
+  </section>
+
+  <!-- Español -->
+  <section class="copy" lang="es">
+    <p class="lede">Chooserly deja que el azar decida. Todos ponen un dedo en la pantalla y la app elige, o gira una ruleta de nombres. Aquí encontrarás ayuda y cómo contactarme.</p>
+
+    <div class="contact">
+      <h2>Contactar a soporte</h2>
+      <p>¿Encontraste un error, tienes una pregunta o una idea? Escríbeme y te responderé. Incluye el modelo de tu iPhone o iPad y tu versión de iOS.</p>
+      <a class="mail" href="mailto:edgarx75@gmail.com?subject=Soporte%20de%20Chooserly">edgarx75@gmail.com</a>
+    </div>
+
+    <h2 class="section">Preguntas frecuentes</h2>
+
+    <details>
+      <summary>¿Cómo empiezo un sorteo?</summary>
+      <p>Abre la pestaña Toca y que cada persona ponga un dedo en la pantalla. Cuando todos están, los anillos laten tres veces y se hace el sorteo. Levanten los dedos para empezar de nuevo.</p>
+    </details>
+    <details>
+      <summary>¿Puede elegir a más de una persona o hacer equipos?</summary>
+      <p>Sí. Toca el ícono de ajustes en la esquina superior de la pantalla Toca y elige un modo: una persona, varias, equipos u orden de turnos. También puedes ordenar a los ganadores en 1.º, 2.º y 3.º lugar y cambiar cuánto dura la cuenta regresiva.</p>
+    </details>
+    <details>
+      <summary>Somos muchos y no cabemos todos en la pantalla.</summary>
+      <p>En esos mismos ajustes, cambia la forma de unirse a Tocar. Cada persona toca la pantalla una vez y su marcador se queda, así pueden pasarse el teléfono. Toca un marcador otra vez para quitarlo. Inicia el sorteo cuando todos estén.</p>
+    </details>
+    <details>
+      <summary>¿Cómo uso la ruleta y guardo una lista?</summary>
+      <p>Abre la pestaña Ruleta, toca el botón de editar y agrega al menos dos nombres. Ponle nombre a la lista y guárdala. Tus listas guardadas están en el botón de listas, listas para girar otra vez.</p>
+    </details>
+    <details>
+      <summary>¿De verdad es al azar?</summary>
+      <p>Sí. Todos los anillos se ven iguales hasta que termina el sorteo, así que nada delata el resultado. Los sorteos de la app se prueban en decenas de miles de rondas para comprobar que nadie tenga ventaja, ni en quién gana ni en qué lugar queda.</p>
+    </details>
+    <details>
+      <summary>¿Cómo cambio el tema o desactivo la vibración y el sonido?</summary>
+      <p>Abre la pestaña Ajustes. Ahí puedes elegir uno de seis temas y activar o desactivar la vibración y el sonido.</p>
+    </details>
+    <details>
+      <summary>¿Qué pasa con mis datos?</summary>
+      <p>Nada sale de tu dispositivo. Chooserly no se conecta a internet y tus listas de nombres se guardan solo en tu iPhone o iPad. Si borras la app, se borran también.</p>
+    </details>
+    <details>
+      <summary>¿Qué dispositivos son compatibles?</summary>
+      <p>iPhone y iPad con iOS o iPadOS 18 o posterior. La app está disponible en español e inglés.</p>
+    </details>
+  </section>
+
+  <footer>© 2026 Edgar Solis</footer>
+</main>
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.lang button');
+    function set(lang) {
+      document.body.classList.toggle('es', lang === 'es');
+      document.documentElement.lang = lang;
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
+    }
+    buttons.forEach(function (b) { b.addEventListener('click', function () { set(b.dataset.lang); }); });
+    var wanted = (location.hash === '#es' || location.hash === '#en') ? location.hash.slice(1)
+      : ((navigator.language || '').toLowerCase().indexOf('es') === 0 ? 'es' : 'en');
+    set(wanted);
+  })();
+</script>
+</body>
+</html>
